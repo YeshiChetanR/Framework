@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                    http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="controller" class="com.atmecs.restful.executor.Controller" scope="prototype">
+		<constructor-arg name="testCase" value="" />
+		<constructor-arg name="contract" value="" />
+	</bean>
+	
+	<bean id="parser" class="com.atmecs.restful.parser.ParserFactory"></bean>
+	<bean id = "getParser" factory-bean="parser" factory-method="getParser" scope="prototype">
+	<constructor-arg value=""></constructor-arg>
+	</bean>
+	
+	<!-- <bean id = "xml" factory-bean="parser" factory-method="createXmlParser" /> -->
+
+	<bean id="factory" class="com.atmecs.restful.httpVerbs.RestServiceFactory"></bean>
+	<bean id="httpfactory" factory-bean="factory" factory-method="getService" scope="prototype">
+	<constructor-arg value=""/>
+	</bean>
+	
+	<!--<bean id="GET" factory-bean="factory" factory-method="createGetRequest"/>
+	<bean id="POST" factory-bean="factory" factory-method="createPostRequest" />
+	<bean id="PUT" factory-bean="factory" factory-method="createPutRequest" />
+	<bean id="DELETE" factory-bean="factory" factory-method="createDeleteRequest" />
+	 -->
+	 
+	<bean id = "responseValidator" class="com.atmecs.restful.validation.ResponseValidator"/>
+	<bean id = "assertResponse" class="com.atmecs.restful.assertion.AssertResponse"/>
+	
+	<context:component-scan base-package="com.atmecs.restful" />
+	<context:annotation-config />
+
+</beans>  

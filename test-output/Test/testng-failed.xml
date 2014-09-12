@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test]">
+  <test name="EP(failed)">
+    <classes>
+      <class name="com.atmecs.restful.testrunner.Controller">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.atmecs.restful.testrunner.Controller -->
+    </classes>
+  </test> <!-- EP(failed) -->
+</suite> <!-- Failed suite [Test] -->

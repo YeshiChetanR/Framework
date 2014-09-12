@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test" duration-ms="2073" started-at="2014-09-11T10:40:45Z" finished-at="2014-09-11T10:40:47Z">
+    <groups>
+    </groups>
+    <test name="EP" duration-ms="2073" started-at="2014-09-11T10:40:45Z" finished-at="2014-09-11T10:40:47Z">
+      <class name="com.atmecs.restful.executor.Controller">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.atmecs.restful.executor.Controller@50d8a1bb]" name="test" duration-ms="2063" started-at="2014-09-11T16:10:45Z" finished-at="2014-09-11T16:10:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.atmecs.restful.executor.Controller@7aae6a99]" name="test" duration-ms="1790" started-at="2014-09-11T16:10:45Z" finished-at="2014-09-11T16:10:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.atmecs.restful.executor.Controller@3e622574]" name="test" duration-ms="1962" started-at="2014-09-11T16:10:45Z" finished-at="2014-09-11T16:10:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.atmecs.restful.executor.Controller@1d8902ab]" name="test" duration-ms="1947" started-at="2014-09-11T16:10:45Z" finished-at="2014-09-11T16:10:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.atmecs.restful.executor.Controller -->
+    </test> <!-- EP -->
+  </suite> <!-- Test -->
+</testng-results>
